@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unsxx"
+    android:orientation="vertical"
+    tools:context="com.inscripts.cometchatpulse.demo.Activity.LoginActivity">
+
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/button_background"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <GridView
+        android:id="@+id/sample_list"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:numColumns="2"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/haven_t_created_a_user_yet_select_one_of_our_default_users_for_testing"
+        android:textColor="@color/primaryTextColor" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_uid"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/enter_uid"
+        app:boxStrokeColor="@color/secondaryDarkColor"
+        app:boxStrokeWidth="1dp"
+        app:counterOverflowTextAppearance="@color/error"
+        app:counterTextAppearance="@style/AppTheme.HelpText"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@color/error"
+        app:helperText="Required*"
+        app:helperTextEnabled="true"
+        app:helperTextTextAppearance="@style/AppTheme.HelpText"
+        app:hintAnimationEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/guid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/enter_uid"
+            android:imeOptions="actionDone"
+            android:inputType="text|textCapSentences"
+            android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
